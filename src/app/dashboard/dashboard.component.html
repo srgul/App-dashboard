@@ -1,0 +1,55 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 text-right ml-auto">
+                <button class="btn btn-sm btn-info">New Model</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Yüklenmiş Modeller</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Model Name
+                                    </th>
+                                    <th>
+                                        Model Desc
+                                    </th>
+                                    <th>
+                                        Edit
+                                    </th>
+                                </thead>
+                                <tbody *ngFor="let item of modelList; index as i" >
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            {{ item[i].dscName }}
+                                        </td>
+                                        <td>
+                                            {{item[i].fileName}}
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
